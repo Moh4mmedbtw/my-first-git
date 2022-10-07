@@ -4,13 +4,11 @@ public class Sorter {
 
     public static void main(String[] args) {
         int[] x = {5,4,3,1,2,7};
-        selectionSort(x);
+        int[] y = {5,4,3,1,2,7};
+        selectSort(x);
+        insertSort(y);
         System.out.println(Arrays.toString(x));
-        insertionSort(x);
-        System.out.println(Arrays.toString(x));
-        sort(x);
-        System.out.println(Arrays.toString(x));
-        
+        System.out.println(Arrays.toString(y));
     }
 
     public static void selectionSort(int[] arr)
@@ -50,8 +48,12 @@ public class Sorter {
         }
     }
 
-    public static void sort(int[] arr){
+    public static void insertSort(int[] arr){
         insertionSort(arr);
+    }
+
+    public static void selectSort(int[] arr){
+        selectionSort(arr);
     }
     
 }
