@@ -8,6 +8,8 @@ public class Sorter {
         System.out.println(Arrays.toString(x));
         insertionSort(x);
         System.out.println(Arrays.toString(x));
+        sort(x);
+        System.out.println(Arrays.toString(x));
         
     }
 
@@ -46,6 +48,10 @@ public class Sorter {
 
             arr[j + 1] = key;
         }
+    }
+
+    public static void sort(int[] arr){
+        insertionSort(arr);
     }
     
 }
